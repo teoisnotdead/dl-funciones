@@ -8,8 +8,21 @@ const changeToBlack = (element) => {
   element.style.backgroundColor = 'black'
 }
 
-// addEventListener
-
+// addEventListeners
 container.addEventListener('click', (event) => {
   console.log('event.target', event.target)
+  const element = event.target
+
+  if (element.classList.contains('base')) {
+    changeToBlack(element)
+  }
 })
+
+// También se puede hacer de forma individual como se ha visto
+// en las clases pero genera mas código
+
+// blueBox.addEventListener('click', () => {
+//   changeToBlack(blueBox)
+// })
+
+// etc...
