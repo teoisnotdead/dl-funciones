@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
 .base {
   width: 200px;
   height: 200px;
