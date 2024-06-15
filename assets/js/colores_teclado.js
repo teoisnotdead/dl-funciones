@@ -13,17 +13,20 @@ const newDiv = (color) => {
 
 document.addEventListener('keydown', (event) => {
   console.log('event.key', event.key);
-  if (event.key === 'a') {
+
+  const key = event.key
+
+  if (key === 'a') {
     colorGlobal = 'pink'
-  } else if (event.key === 's') {
+  } else if (key === 's') {
     colorGlobal = 'orange'
-  } else if (event.key === 'd') {
+  } else if (key === 'd') {
     colorGlobal = 'lightblue'
-  } else if (event.key === 'q') {
+  } else if (key === 'q') {
     newDiv('purple')
-  } else if (event.key === 'w') {
+  } else if (key === 'w') {
     newDiv('grey')
-  } else if (event.key === 'e') {
+  } else if (key === 'e') {
     newDiv('brown')
   }
 
